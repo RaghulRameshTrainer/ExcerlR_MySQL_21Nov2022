@@ -37,9 +37,20 @@ SELECT * FROM company;
 -- DQL - Data Query Language (SELECT)
 
 SELECT * FROM company WHERE company='Infosys' and Place='Mumbai' and salary>5000;
-SELECT * FROM company;
+SELECT count(*) FROM company;
 
 -- UPDATE company SET gender='M' WHERE gender=0;
 DESC company;
 SELECT * FROM company WHERE age<25 and Place!='';
 SELECT * FROM company WHERE age<25 and Place!=''  and company='TCS';
+
+
+SELECT count(*) FROM company;
+
+SELECT count(distinct Company,Age,Salary,Place,Country,Gender ) FROM company;
+
+SELECT * FROM company;
+
+SELECT max(salary) FROM company;
+SELECT sum(salary) FROM company;
+SELECT avg(salary) FROM company;
